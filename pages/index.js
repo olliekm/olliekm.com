@@ -1,13 +1,16 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Home({filtered}) {
   return (
     <>
         <div className="w-full relative h-96 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] border-y-[1px] border-white/10 from-indigo-800/50 via-violet-600/10 to-sky-900/0 flex justify-center items-center">
-          <h1 className="text-white font-normal text-3xl text-center font-mono">Hi, I'm <br /> <b className="font-bold text-8xl">oliver</b></h1>
+          <h1 className="text-white font-normal text-3xl text-center font-mono">Hi, I&apos;m <br /> <b className="font-bold text-8xl">oliver</b></h1>
           <div className="absolute bottom-0  p-2">
             <div className="bg-black/50 outline outline-1 text-white outline-white/10 flex p-3 rounded-3xl h-20 items-center w-48 space-x-4">
-              <div className="overflow-hidden w-12 h-12 rounded-3xl"><img className=" " src="https://i.imgur.com/NyGVvH7.gif" alt="" /></div>
+              <div className="overflow-hidden w-12 h-12 rounded-3xl">
+                <Image className="" width={50} height={50} src="/pp.gif" alt="" />
+              </div>
               <div className="flex flex-col">
                 <h1 className="text-xl">{filtered.username}</h1>
                 <div className="flex flex-col text-sm">
@@ -20,7 +23,7 @@ export default function Home({filtered}) {
         </div>
         <div className="w-full h-auto sm:flex-row flex-col flex items-center px-20 py-10">
           <h1 className="text-white text-5xl font-bold font-mono">Follow my development journey!</h1>
-          <p className="text-lg sm:pl-4 sm:pt-0 pt-4 text-white/80 italic">"Join me on my coding journey as I share the ups and downs of my development process. As a self-taught developer, I hope to inspire others to pursue their passion for coding. Let's grow together!" <br />- ChatGPT (2023)</p>
+          <p className="text-lg sm:pl-4 sm:pt-0 pt-4 text-white/80 italic">&quot;Join me on my coding journey as I share the ups and downs of my development process. As a self-taught developer, I hope to inspire others to pursue their passion for coding. Let&apos;s grow together!&quot; <br />- ChatGPT (2023)</p>
         </div>
         <div className="w-full overflow-hidden relative pl-10">
           <div className="flex overflow-x-auto p-2 space-x-4">
@@ -28,7 +31,7 @@ export default function Home({filtered}) {
             <div className="h-96 flex flex-col justify-between w-64 shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
               <div className="">
                 <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-indigo-900 cursor-pointer">Learning python for competitive programming 🐍</h1>
-                <p className="text-md italic mb-2">Why I chose python, why I'm switching...</p>
+                <p className="text-md italic mb-2">Why I chose python, why I&apos;m switching...</p>
                 <button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button>
               </div>
               <div className=" bg-indigo-600 p-2 w-max rounded-md px-3">
@@ -47,7 +50,7 @@ export default function Home({filtered}) {
             </div>
             <div className="h-96 flex flex-col justify-between w-64 shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
               <div className="">
-                <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-pink-900 cursor-pointer">I'm going OVERKILL 🚀</h1>
+                <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-pink-900 cursor-pointer">I&apos;m going OVERKILL 🚀</h1>
                 <p className="text-md italic mb-2">Making a completely overkill blog website. why? why not...</p>
                 <button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button>
               </div>
@@ -80,7 +83,7 @@ export default function Home({filtered}) {
                   <h1 className="text-3xl font-mono ">Get a high graduating average</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://1.bp.blogspot.com/-FW7omWxUWRQ/XtUD5bm11VI/AAAAAAAAKnQ/YfQuBnritZMTfRFnNEe8NNxSEQd_anoUgCLcBGAsYHQ/s1600/Funny%2BCat%2BGIF%2B%25E2%2580%25A2%2BSerious%2Bcat%2Bis%2Bready%2Bto%2Bgo%2Bto%2Bschool%2Bwith%2Bhis%2Bhat%2Band%2Bsmall%2Byellow%2Bbag.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat1.gif" alt="" />
                 </div>
               </div>
               <div className="h-96 flex relative group overflow-hidden flex-col w-80 shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
@@ -91,7 +94,7 @@ export default function Home({filtered}) {
                   <h1 className="text-4xl font-mono ">Become a software engineer</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://media1.giphy.com/media/T3rgaqd1vT6idUS12Q/giphy.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat2.webp" alt="" />
                 </div>
               </div>
               <div className="h-80 relative group overflow-hidden flex flex-col w-64 shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
@@ -102,7 +105,7 @@ export default function Home({filtered}) {
                   <h1 className="text-3xl font-mono">Improve at academics and software development</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://media.tenor.com/VQfP85vojrEAAAAM/study-reading.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat3.gif" alt="" />
                 </div>
               </div>
             </div>
@@ -116,7 +119,7 @@ export default function Home({filtered}) {
                   <h1 className="text-4xl font-mono ">Become a software engineer</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://media1.giphy.com/media/T3rgaqd1vT6idUS12Q/giphy.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat2.webp" alt="" />
                 </div>
               </div>
               <div className="h-80 w-4/5 flex group overflow-hidden relative flex-col  shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
@@ -127,7 +130,7 @@ export default function Home({filtered}) {
                   <h1 className="text-3xl font-mono ">Get a high graduating average</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://1.bp.blogspot.com/-FW7omWxUWRQ/XtUD5bm11VI/AAAAAAAAKnQ/YfQuBnritZMTfRFnNEe8NNxSEQd_anoUgCLcBGAsYHQ/s1600/Funny%2BCat%2BGIF%2B%25E2%2580%25A2%2BSerious%2Bcat%2Bis%2Bready%2Bto%2Bgo%2Bto%2Bschool%2Bwith%2Bhis%2Bhat%2Band%2Bsmall%2Byellow%2Bbag.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat1.gif" alt="" />
                 </div>
               </div>
               <div className="h-80 relative group overflow-hidden flex flex-col w-4/5 shrink-0 outline outline-[1px] outline-white/10 rounded-2xl p-6 text-white/80 space-y-2">
@@ -138,7 +141,7 @@ export default function Home({filtered}) {
                   <h1 className="text-3xl font-mono">Improve at academics and software development</h1>
                 </div>
                 <div className="absolute -top-2 left-0 opacity-0 w-full h-full group-hover:opacity-20 duration-200">
-                  <img className="w-full h-full" src="https://media.tenor.com/VQfP85vojrEAAAAM/study-reading.gif" alt="" />
+                  <Image className="w-full h-full" width={50} height={50} src="/cat3.gif" alt="" />
                 </div>
               </div>
             </div>
@@ -152,11 +155,11 @@ export default function Home({filtered}) {
           <div className="flex pt-10 text-2xl justify-evenly items-center font-mono pb-10">
             <div className="flex flex-col text-center space-y-4">
               <h1 className="text-9xl">🏫</h1>
-              <small>I'm in high school</small>
+              <small>I&apos;m in high school</small>
             </div>
             <div className="flex flex-col text-center space-y-4">
               <h1 className="text-9xl">🍁</h1>              
-              <small>I'm Canadian</small>
+              <small>I&apos;m Canadian</small>
             </div>
             <div className="flex flex-col text-center space-y-4">
               <h1 className="text-9xl">🎧</h1>

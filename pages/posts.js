@@ -5,7 +5,7 @@ import { db } from '../utils/firebase';
 import Head from 'next/head'
 import Link from 'next/link';
 
-function posts() {
+function Posts() {
   const [filtersOpen, setFiltersOpen] = useState(false)
   const [sortby, setSortby] = useState('')
   const [selectedTag, setSelectedTag] = useState('')
@@ -169,8 +169,8 @@ function posts() {
               {
                 posts.length > 0 ?(
                   posts.map((post, i) => (
-                    <Link href={'/post/'+post.title}>
-                    <div key={i} className=" h-72 justify-between flex flex-col shrink-0 outline outline-[1px] outline-white/10 rounded-2xl text-white p-4">
+                    <Link key={i} href={'/post/'+post.title}>
+                    <div className=" h-72 justify-between flex flex-col shrink-0 outline outline-[1px] outline-white/10 rounded-2xl text-white p-4">
                       <div className="">
                         <h1 className="text-xl font-semibold text-white/90 mb-2 hover:underline decoration-indigo-900 cursor-pointer">{post.title}</h1>
                         <p className="text-md italic text-sm mb-2">{post.description}</p>
