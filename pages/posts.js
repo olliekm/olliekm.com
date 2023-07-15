@@ -227,4 +227,4 @@ function Posts() {
   )
 }
 
-export default posts
+export default Posts
