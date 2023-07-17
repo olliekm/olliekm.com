@@ -32,7 +32,7 @@ export default function Home({filtered}) {
               <div className="">
                 <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-indigo-900 cursor-pointer">Learning python for competitive programming 🐍</h1>
                 <p className="text-md italic mb-2">Why I chose python, why I&apos;m switching...</p>
-                <button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button>
+                <Link href={'/posts'}><button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button></Link>
               </div>
               <div className=" bg-indigo-600 p-2 w-max rounded-md px-3">
                 Competitive programming
@@ -42,7 +42,7 @@ export default function Home({filtered}) {
               <div className="">
                 <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-cyan-900 cursor-pointer">Throwing CCC & Fermat 📄</h1>
                 <p className="text-md italic mb-2">What happened in my first math & competitive programming contests...</p>
-                <button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button>
+                <Link href={'/posts'}><button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button></Link>
               </div>
               <div className=" bg-cyan-600 p-2 w-max rounded-md px-3">
                 Academics
@@ -52,7 +52,7 @@ export default function Home({filtered}) {
               <div className="">
                 <h1 className="text-2xl font-semibold text-white/90 mb-2 hover:underline decoration-pink-900 cursor-pointer">I&apos;m going OVERKILL 🚀</h1>
                 <p className="text-md italic mb-2">Making a completely overkill blog website. why? why not...</p>
-                <button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button>
+                <Link href={'/posts'}><button className="outline outline-[1px] outline-white/10 rounded-md px-2 py-2">See more</button></Link>
               </div>
               <div className=" bg-pink-600 p-2 w-max rounded-md px-3">
                 Web development
@@ -152,7 +152,7 @@ export default function Home({filtered}) {
 
           <h1 className="text-4xl font-mono font-bold">Even more about me</h1>
           <h2 className="text-2xl font-mono italic text-white/60">(this guy really likes to talk about himself)</h2>
-          <div className="flex pt-10 text-2xl justify-evenly items-center font-mono pb-10">
+          <div className="flex sm:flex-row flex-col pt-10 text-2xl justify-evenly items-center font-mono pb-10">
             <div className="flex flex-col text-center space-y-4">
               <h1 className="text-9xl">🏫</h1>
               <small>I&apos;m in high school</small>
