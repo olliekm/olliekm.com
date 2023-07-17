@@ -1,8 +1,12 @@
 import React from 'react'
+import Head from 'next/head'
 
 function projects() {
   return (
     <div className='min-h-screen h-auto text-white w-full sm:pb-0 pb-20'>
+        <Head>
+          <title>olliekm | projects</title>
+        </Head>
         <div className="w-full h-48 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] border-y-[1px] border-purple-100/10 from-blue-600/50 via-blue-400/10 to-sky-900/0 flex justify-center items-center">
           <h1 className="text-white font-normal text-3xl text-center font-mono">My work</h1>
         </div>

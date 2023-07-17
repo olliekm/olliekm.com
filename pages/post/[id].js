@@ -4,6 +4,7 @@ import { useRouter } from 'next/router'
 import { collection, doc, getDocs, query, where } from "firebase/firestore"; 
 import { db } from '../../utils/firebase';
 import remarkGfm from 'remark-gfm'
+import Head from 'next/head';
 
 function PostReadingPage() {
     const router = useRouter()
@@ -31,6 +32,9 @@ function PostReadingPage() {
 
   return (
     <div className='min-h-screen text-white h-auto py-8 px-4 w-full'>
+        <Head>
+          <title>olliekm - {postData?.title}</title>
+        </Head>
         <h1 className='text-4xl font-bold mb-16'>{postData?.title}</h1>
         <article className='prose prose-md font-sans prose-invert ' id='space'>
         </article>

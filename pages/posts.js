@@ -100,7 +100,7 @@ function Posts() {
   return (
     <div className='min-h-screen w-full font-sans'>
         <Head>
-          <title>Posts {selectedTag == '' ? `` : `- ${selectedTag}`}</title>
+          <title>olliekm | posts {selectedTag == '' ? `` : `- ${selectedTag}`}</title>
         </Head>
         <div className="w-full h-48 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] border-y-[1px] border-purple-100/10 from-purple-600/50 via-purple-400/10 to-sky-900/0 flex justify-center items-center">
           <h1 className="text-white font-normal text-3xl text-center font-mono">My blog posts</h1>

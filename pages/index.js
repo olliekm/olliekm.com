@@ -1,10 +1,14 @@
 import Link from "next/link"
 import Image from "next/image"
+import Head from "next/head"
 
 export default function Home({filtered}) {
   return (
     <>
         <div className="w-full relative h-96 bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] border-y-[1px] border-white/10 from-indigo-800/50 via-violet-600/10 to-sky-900/0 flex justify-center items-center">
+          <Head>
+            <title>olliekm | home</title>
+          </Head>
           <h1 className="text-white font-normal text-3xl text-center font-mono">Hi, I&apos;m <br /> <b className="font-bold text-8xl">oliver</b></h1>
           <div className="absolute bottom-0  p-2">
             <div className="bg-black/50 outline outline-1 text-white outline-white/10 flex p-3 rounded-3xl h-20 items-center w-48 space-x-4">
